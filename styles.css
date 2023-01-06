@@ -125,7 +125,7 @@ h1 span{
 @media screen and (min-width: 1024px) and (max-width: 1443px){
     .container{
         flex-direction: row;
-        padding: 70px 20px;
+        padding: 20px 20px;
     }    
     
     #img-header{
