@@ -85,7 +85,7 @@ h1 span{
     color: hsla(0, 0%, 100%, 0.6);
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 1023px){
 
     #img-header{
         background-image: url(images/image-header-desktop.jpg);
@@ -97,13 +97,14 @@ h1 span{
     }
 
     #body h1{
-        font-size: 50px;
+        font-size: 60px;
         margin: 50px 0px;
     }
 
     #body p{
         font-size: 22px;
         color: hsla(0, 0%, 100%, 0.6);
+        padding: 0px;
     }
 
     #body .bloque h3{
@@ -125,14 +126,15 @@ h1 span{
 @media screen and (min-width: 1024px) and (max-width: 1443px){
     .container{
         flex-direction: row;
-        padding: 20px 20px;
+        padding: 15% 10%;
+        margin: 0px 0px;
     }    
     
     #img-header{
         order: 2;
         background-image: url(images/image-header-desktop.jpg);
-        min-width: 500px;
-        max-width: 600px;
+        min-width: 480px;
+        max-width: 900px;
         background-position: center;
         background-size: cover;
         border-top-left-radius: 0px;
@@ -146,31 +148,49 @@ h1 span{
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
         border-bottom-left-radius: 10px;
-        width: 55%;
+        width: 50%;
         max-width: 700px;
-        min-width: 500px;
-        padding: 20px 10px;
+        min-width: 420px;
+        padding: 2rem 2rem 2rem 4rem;
+        text-align: left;
     }
 
     #body h1{
         font-size: 40px;
-        margin: 25px 0px;
+        margin: 10px 0px;
     }
     
     #body p{
-        font-size: 16px;
+        padding: 0;
+        font-size: 18px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        margin-right: 55px;
         color: hsla(0, 0%, 100%, 0.6);
     }
     
+    .bloques{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 0px;
+        margin-right: 30px;
+    }
+
+    #body .bloque{
+        margin-bottom: 0px;
+    }
+
     #body .bloque h3{
+        padding-top: 0px;
+        margin-top: 10px;
         margin-bottom: 5px;
-        font-size: 35px;
+        font-size: 30px;
     }
         
     #body .bloque p{
         margin-top: 0px;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 12px;
         letter-spacing: 2px;
         font-weight: 400;
         color: hsla(0, 0%, 100%, 0.6);
@@ -200,24 +220,30 @@ h1 span{
         border-bottom-right-radius: 0px;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
-        padding: 50px 120px 50px 80px;
+        padding: 2.5rem 7rem 2.5rem 7rem;
         width: 55%;
         max-width: 700px;
         text-align: left;
     }
 
     #body h1{
-        font-size: 38px;
+        font-size: 50px;
     }
 
     #body p{
         padding-right: 70px;
         padding-left: 0px;
+        font-size: 20px;
         color: hsla(0, 0%, 100%, 0.6);
     }
 
     #body .bloque h3{
+        font-size: 36px;
         margin-bottom: 10px;
+    }
+
+    #body .bloque p{
+        font-size: 17px;
     }
 
     .bloques{
